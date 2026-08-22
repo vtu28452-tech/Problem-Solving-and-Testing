@@ -5,7 +5,6 @@ class Solution {
 
         return Math.abs(days1 - days2);
     }
-
     private int convertToDays(String date) {
         String[] parts = date.split("-");
 
