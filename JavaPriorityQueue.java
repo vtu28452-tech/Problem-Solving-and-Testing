@@ -33,20 +33,15 @@ class Priorities {
             new Comparator<Student>() {
                 @Override
                 public int compare(Student a, Student b) {
-
-                    // 1. Higher CGPA first
                     if (a.getCGPA() != b.getCGPA()) {
                         return Double.compare(b.getCGPA(), a.getCGPA());
                     }
 
-                    // 2. Same CGPA -> alphabetical name
                     int nameCompare = a.getName().compareTo(b.getName());
 
                     if (nameCompare != 0) {
                         return nameCompare;
                     }
-
-                    // 3. Same CGPA and name -> lower ID first
                     return Integer.compare(a.getID(), b.getID());
                 }
             }
