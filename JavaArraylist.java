@@ -9,8 +9,6 @@ public class Solution {
         int n = sc.nextInt();
 
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-
-        // Read n lines
         for (int i = 0; i < n; i++) {
             int d = sc.nextInt();
 
@@ -23,7 +21,6 @@ public class Solution {
             list.add(row);
         }
 
-        // Number of queries
         int q = sc.nextInt();
 
         for (int i = 0; i < q; i++) {
