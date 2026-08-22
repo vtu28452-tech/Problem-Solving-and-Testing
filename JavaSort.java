@@ -34,19 +34,16 @@ public class Solution {
             @Override
             public int compare(Student a, Student b) {
 
-                // 1. CGPA: decreasing order
                 if (a.cgpa != b.cgpa) {
                     return Double.compare(b.cgpa, a.cgpa);
                 }
 
-                // 2. Name: alphabetical order
                 int nameCompare = a.name.compareTo(b.name);
 
                 if (nameCompare != 0) {
                     return nameCompare;
                 }
 
-                // 3. ID: increasing order
                 return Integer.compare(a.id, b.id);
             }
         });
